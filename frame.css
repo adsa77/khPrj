@@ -1,0 +1,61 @@
+.container {
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 3px dashed black;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  grid-column: span 5;
+  background-color: skyblue;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  border-radius: 30px;
+  background-color: lightgreen;
+  position: fixed;
+  left: -200px;
+  animation-name: sidebarfold;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.sideList{
+  list-style-type: none;
+}
+
+#sidebarBtn{
+  position: sticky;
+  top: 5px;
+  left: 20px;
+  width: 50px;
+  height: 30px;
+  background-color: lightgreen;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes sidebarfold{
+  0%{
+    left: -200px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
