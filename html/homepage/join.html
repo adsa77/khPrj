@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <h1><span><a href="./index.html">손지욱의 도서카페</a></span></h1>
+        </header>
+        <aside class="sidebar">
+            <table>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./index.html">홈으로</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./login.html">로그인</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./intro.html">소개</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./board.html">게시판</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./portal.html">유용한 사이트</a></span></td>
+                </tr>
+            </table>
+        </aside>
+        <section id="contents">
+            <form action="#"></form>
+            <h1>회원가입</h1>
+            <fieldset>
+                <legend>필수 입력 사항</legend>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <td><input type="text" placeholder="아이디 10글자 이내" size="30"> <input type="submit" value="중복확인">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input type="text" placeholder="영문, 숫자, 특수문자 포함 8자 이상" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호 확인</th>
+                        <td><input type="text" placeholder="비밀번호를 입력하세요." size="30"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            이름
+                        </th>
+                        <td>
+                            <input type="text" placeholder="이름을 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            생년월일
+                        </th>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">
+                            성별
+                        </th>
+                        <td>
+                            <label for='m'>남성</label>
+                            <input type="radio" name="gender" id="m">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for='f'>여성</label>
+                            <input type="radio" name="gender" id="f">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>추가정보</legend>
+                흥미있는 도서 장르:
+                <br>
+                <input type="checkbox">코믹 <input type="checkbox">호러 <input type="checkbox">추리
+                <br>
+                <input type="checkbox">종교 <input type="checkbox">요리 <input type="checkbox">건강
+                <br>
+                <input type="checkbox">문화 <input type="checkbox">사회 <input type="checkbox" checked>없음
+                <br>
+                <input type="checkbox">기타 : <input type="text">
+                <br>
+                <br>
+                자기소개
+                <br>
+                <input type="text" style="width:400px;height:75px;">
+            </fieldset>
+            </form>
+            <input type="submit" value="제출하기">
+        </section>
+    </div>
+    <footer id="footer">
+        <select onchange="location.href = this.value;">
+            <option>바로가기</option>
+            <option value="./index.html">홈으로</option>
+            <option value="./login.html">로그인</option>
+            <option value="./intro.html">소개</option>
+            <option value="./board.html">게시판</option>
+            <option value="./portal.html">유용한사이트</option>
+        </select>
+    </footer>
+    <br>
+    <br>
+
+</body>
+
+</html>

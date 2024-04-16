@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1><span><a href="./index.html">손지욱의 도서카페</a></span></h1>
+        </header>
+        <aside class="sidebar">
+            <table>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./index.html">홈으로</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./login.html">로그인</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./intro.html">소개</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./board.html">게시판</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./portal.html">유용한 사이트</a></span></td>
+                </tr>
+            </table>
+        </aside>
+        <section id="contents">
+            <img width="100%"
+            src="./media/image/books.jpg" alt="잘못된이미지">
+            <h2>홈페이지 만들기 연습입니다.</h2>
+            <h4><a href="./join.html">회원가입</a></h4>
+        </section>
+    </div>
+    <footer id="footer">
+        <select onchange="location.href = this.value;">
+            <option>바로가기</option>
+            <option value="./index.html">홈으로</option>
+            <option value="./login.html">로그인</option>
+            <option value="./intro.html">소개</option>
+            <option value="./board.html">게시판</option>
+            <option value="./portal.html">유용한사이트</option>
+        </select>
+    </footer>
+      <br>
+      <br>
+      
+      <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            var content = document.querySelector('.content');
+
+            sidebar.classList.toggle('active');
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

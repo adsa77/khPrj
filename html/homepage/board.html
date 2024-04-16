@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <h1><span><a href="./index.html">손지욱의 도서카페</a></span></h1>
+        </header>
+        <aside class="sidebar">
+            <table>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./index.html">홈으로</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./login.html">로그인</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./intro.html">소개</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./board.html">게시판</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="./portal.html">유용한 사이트</a></span></td>
+                </tr>
+            </table>
+        </aside>
+        <section id="contents">
+            <h1>게시판</h1>
+
+            <table border="2">
+                <tr>
+                    <td id="board01">
+                        <h4>1번 게시판</h4>
+                        <ul>
+                            <li>1-1게시물</li>
+                            <li>1-2게시물</li>
+                            <li>1-3게시물</li>
+                            <li>1-4게시물</li>
+                            <li>1-5게시물</li>
+                        </ul>
+                    </td>
+                    <td id="board02">
+                        <h4>2번 게시판</h4>
+                        <ol reversed="reversed">
+                            <li>2-1게시물</li>
+                            <li>2-2게시물</li>
+                            <li>2-3게시물</li>
+                            <li>2-4게시물</li>
+                            <li>2-5게시물</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="board02">
+                        <h4>3번 게시판</h4>
+                        <ol type="A">
+                            <li>3-1게시물</li>
+                            <li>3-2게시물</li>
+                            <li>3-3게시물</li>
+                            <li>3-4게시물</li>
+                            <li>3-5게시물</li>
+                        </ol>
+                    </td>
+                    <td id="board01">
+                        <h4>4번 게시판</h4>
+                        <ol type="a">
+                            <li>4-1게시물</li>
+                            <li>4-2게시물</li>
+                            <li>4-3게시물</li>
+                            <li>4-4게시물</li>
+                            <li>4-5게시물</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="board01">
+                        <h4>5번 게시판</h4>
+                        <ol type="I">
+                            <li>5-1게시물</li>
+                            <li>5-2게시물</li>
+                            <li>5-3게시물</li>
+                            <li>5-4게시물</li>
+                            <li>5-5게시물</li>
+                        </ol>
+                    </td>
+                    <td id="board02">
+                        <h4>6번 게시판</h4>
+                        <ol type="i">
+                            <li>6-1게시물</li>
+                            <li>6-2게시물</li>
+                            <li>6-3게시물</li>
+                            <li>6-4게시물</li>
+                            <li>6-5게시물</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+
+        </section>
+    </div>
+    <footer id="footer">
+        <select onchange="location.href = this.value;">
+            <option>바로가기</option>
+            <option value="./index.html">홈으로</option>
+            <option value="./login.html">로그인</option>
+            <option value="./intro.html">소개</option>
+            <option value="./board.html">게시판</option>
+            <option value="./portal.html">유용한사이트</option>
+        </select>
+    </footer>
+    <br>
+    <br>
+
+</body>
+
+</html>
